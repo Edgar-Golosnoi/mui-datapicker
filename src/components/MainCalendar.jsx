@@ -18,9 +18,10 @@ const slots = {
   rightArrowIcon: ArrowRight,
 };
 
-export default function ArrowSwitcherComponent() {
+export default function MainCalendar() {
   const [currentComponent, setCurrentComponent] = React.useState('date');
   const [selectedDate, setSelectedDate] = React.useState(null);
+
 
   const handleCurrentComponentChange = (event, nextCurrentComponent) => {
     if (nextCurrentComponent !== null) {
@@ -31,20 +32,6 @@ export default function ArrowSwitcherComponent() {
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
-
-
-
-  /// функция для отображения выдранного интервала времени
-  // const dateDifferenceInDays = () => {
-  //   if (!selectedDateRange[0] || !selectedDateRange[1]) {
-  //     return '';
-  //   }
-  //   const diffTime = Math.abs(selectedDateRange[1] - selectedDateRange[0]);
-  //   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-  //   return `Количество дней: ${diffDays}`;
-  // };
-
-
 
 
   

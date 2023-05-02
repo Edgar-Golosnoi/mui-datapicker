@@ -1,13 +1,13 @@
 
 import React from 'react';
-import ArrowSwitcherComponent from './components/ArrowSwitcherComponent';
-
-
+import MainCalendar from './components/MainCalendar';
+// import QuantityDays from './components/QuantityDays';
 
 function App() {
   return (
     <div>
-      <ArrowSwitcherComponent/>
+    <MainCalendar/>
+
     </div>
   );
 }
